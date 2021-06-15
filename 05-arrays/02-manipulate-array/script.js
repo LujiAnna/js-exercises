@@ -2,12 +2,9 @@
  *
  * /05-arrays/02-manipulate-array/script.js - 5.2: manipulation de tableau
  *
- * coded by leny@BeCode
- * started at 26/10/2018
+ * coded by Anna@BeCode
+ * started at 15/06/2018
  */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -24,6 +21,19 @@
         "cerise",
     ];
 
-    // your code here
+    // Transform the array fruits: 
+    // TODO: remove the first
+    console.log(fruits.shift());
 
+    // TODO: remove the last element
+    console.log(fruits.pop());
+
+    // TODO: add an element "banana" at the start of the array
+    console.log(fruits.unshift("banana"));
+    console.log(fruits);
+
+    // TODO: add an element "kiwi" at the end.
+    const newFruits = fruits.push('kiwi');
+    console.log(newFruits);
+    console.log(fruits);
 })();
