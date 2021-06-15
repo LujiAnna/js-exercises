@@ -2,12 +2,10 @@
  *
  * /05-arrays/01-get-element/script.js - 5.1: élément de tableau
  *
- * coded by leny@BeCode
- * started at 26/10/2018
+ * coded by Anna@BeCode
+ * started at 15/06/2021
  */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -27,5 +25,21 @@
     ];
 
     // your code here
+    // TODO: Click button
+    // button tag: <button type="button" id="run">Run the script</button>
+var btnClicked = document.getElementById("run");
+console.log(btnClicked);
+
+    // TODO: Display fourth item
+    
+    // Add event listener to button
+    btnClicked.addEventListener("click", fruitsPrint);
+
+    // Function to print fruits on console
+    // Iterate through array
+    // Display all arrays after button clicked, on console
+function fruitsPrint() {
+    console.log(fruits[3]);
+}
 
 })();
