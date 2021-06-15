@@ -24,22 +24,18 @@
         "cherry",
     ];
 
-    // your code here
     // TODO: Click button
     // button tag: <button type="button" id="run">Run the script</button>
-var btnClicked = document.getElementById("run");
-console.log(btnClicked);
+    var btnClicked = document.getElementById("run");
+    // console.log(btnClicked);
 
     // TODO: Display fourth item
-    
     // Add event listener to button
     btnClicked.addEventListener("click", fruitsPrint);
 
     // Function to print fruits on console
-    // Iterate through array
-    // Display all arrays after button clicked, on console
-function fruitsPrint() {
-    console.log(fruits[3]);
-}
+    function fruitsPrint() {
+      console.log(fruits[3]);
+    }
 
 })();
