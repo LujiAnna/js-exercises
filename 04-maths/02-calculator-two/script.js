@@ -37,7 +37,6 @@
                 break;
                 default:
                     'try again later'
-
         }
     };
 
