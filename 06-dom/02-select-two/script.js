@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
+    const target = document.querySelector("#target");
+    target.innerHTML = 'owned';
+
 
 })();
