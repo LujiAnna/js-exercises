@@ -19,4 +19,26 @@
         status: "married",
     };
     // your code here
+
+    var keys = ``;
+    let values = ``;
+
+    function showProps(obj) {
+        for (var i in obj) {
+          // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+          if (obj.hasOwnProperty(i)) {
+            keys += `${i}\n`;
+            values += `${obj[i]}\n`;
+          }
+        }
+        console.log('keys are ', keys);
+        console.log('values are ',values);
+      }
+
+      let display = document.getElementById('run');
+      display.addEventListener('click', show)
+
+      function show(){
+       showProps(person);
+      }
 })();
