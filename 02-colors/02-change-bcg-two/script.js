@@ -13,4 +13,21 @@
 
     // your code here
 
+    let btnColor = document.getElementById('run');
+    console.log(btnColor);
+    btnColor.addEventListener('click', changeColor);
+
+    let inputColor = document.getElementById('color');
+    console.log(inputColor);
+
+    // does not work
+    let valueColor = inputColor.value;
+    console.log(valueColor);
+    
+    function changeColor(){
+        console.log(inputColor);
+        console.log(valueColor); // can not read color
+        document.body.style.backgroundColor = document.getElementById('color').value;
+    }
+
 })();
