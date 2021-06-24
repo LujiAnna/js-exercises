@@ -27,13 +27,13 @@
                 console.log(x + y);
                 break;
             case "substraction":
-                console.log(value1 - value2);
+                console.log(x - y);
                 break;
             case "multiplication":
-                console.log(value1 * value2);
+                console.log(x * y);
                 break;
             case "division":
-                console.log(value1 / value2);
+                console.log(x / y);
                 break;
                 default:
                     'try again later'
