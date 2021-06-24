@@ -9,31 +9,27 @@
 
 (function() {
 
-// get current time
-let time = new Date();
-console.log(time);
-let hour = time.getHours();
-console.log(hour);
-
-// TODO: grab button element
-let display = document.getElementById("target").innerHTML = "new-value";
-// TODO: Set an event listener
-
-if( hour < 18){
-    // console.log('Hello');
-    document.getElementById('target').innerHTML = 'Hello';
-} else {
-    // console.log('Good evening');
-    document.getElementById('target').innerHTML = 'Good evening';
-}
-
-// TODO: Change content value
-
+    // your code here
     // 01. text according to the hour
 // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
 //1. user opens page
-addEventListener('DOMContentLoaded', function(){
-    // 2. DOM collects current time using inbuilt function
+  addEventListener('DOMContentLoaded', function(){
+// 2. DOM collects current time using inbuilt function
+  
+// testing
+  let time = 12;
+
+  // fetch-get current time
+  time = new Date().getHours() ;
+  console.log(time);
+
+  // before 18h
+  if(time < 18) {
+    document.getElementById('target').innerHTML = 'Hello';
+  } else {
+    document.getElementById('target').innerHTML = 'Good evening';
+  }
+});
 
 })();
